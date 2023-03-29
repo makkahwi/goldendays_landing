@@ -22,7 +22,7 @@ const Second = () => {
                 />
               </h2>
 
-              <p className="lg:text-lg">
+              <p className="lg:text-lg text-justify">
                 Golden Days is an experienced travel agency based in Jordan,
                 specialized in both religious & recreational travel trips in the
                 middle east.

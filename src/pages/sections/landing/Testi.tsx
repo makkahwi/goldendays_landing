@@ -10,8 +10,8 @@ const Testi = () => {
       <div className="flex flex-wrap justify-center px-8 gap-y-10 min-h-[80vh] md:min-h-[50vh] gap-x-6">
         <div className="flex flex-col justify-center items-center gap-y-6 lmd:w-[47%] lmd:order-2">
           <div className="flex flex-col items-center gap-y-2">
-            <h3 className="text-3xl font-semibold text-center text-emerald-900 md:font-bold lg:text-3xl">
-              Visit US @ Our Offices
+            <h3 className="text-3xl font-semibold text-center text-emerald-900 md:font-bold lg:text-3xl text-[#485e88]">
+              Visit Us @ Our Offices
             </h3>
           </div>
 

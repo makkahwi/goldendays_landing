@@ -24,7 +24,7 @@ const Picard = ({ src, title, desc }: cardProps) => {
       </div>
 
       <div className="flex flex-col text-gray-800">
-        <h2 className="font-semibold">{title}</h2>
+        <h2 className="font-semibold text-[#485e88]">{title}</h2>
         {/* <p className="text-xs">{desc}</p> */}
       </div>
     </div>
