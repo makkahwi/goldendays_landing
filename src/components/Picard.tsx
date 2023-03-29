@@ -22,9 +22,10 @@ const Picard = ({ src, title, desc }: cardProps) => {
           className="group-hover:scale-110 group-hover:brightness-75 brig transition-all duration-300"
         />
       </div>
+
       <div className="flex flex-col text-gray-800">
-        <h3 className="font-semibold">{title}</h3>
-        <p className="text-xs">{desc}</p>
+        <h2 className="font-semibold">{title}</h2>
+        {/* <p className="text-xs">{desc}</p> */}
       </div>
     </div>
   );
