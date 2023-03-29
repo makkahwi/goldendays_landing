@@ -1,7 +1,7 @@
 import Picard from "@/components/Picard";
+import { picardData } from "@/constant/Data";
 import React, { useRef } from "react";
 import { BsChevronLeft, BsChevronRight } from "react-icons/bs";
-import { picardData } from "@/constant/Data";
 
 const Pic = () => {
   const scrollContainer = useRef<HTMLDivElement>(null);
@@ -25,8 +25,8 @@ const Pic = () => {
   };
   return (
     <section
-      id="destinations"
-      data-testid="destinations"
+      id="services"
+      data-testid="services"
       className="flex flex-col py-8"
     >
       <div className="min-h-[7.5rem]"></div>

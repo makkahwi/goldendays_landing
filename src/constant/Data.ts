@@ -10,8 +10,8 @@ export const Navdata = [
     reference: "about",
   },
   {
-    title: "Destinations",
-    reference: "destinations",
+    title: "Services",
+    reference: "services",
   },
   {
     title: "Review",
