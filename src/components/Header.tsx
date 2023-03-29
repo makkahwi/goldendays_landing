@@ -1,6 +1,6 @@
+import Image from "next/image";
 import Link from "next/link";
-import React, { useEffect, useState } from "react";
-import { FaPlaneDeparture } from "react-icons/fa";
+import { useEffect, useState } from "react";
 import Nav from "src/components/Nav";
 
 const Header = () => {
@@ -41,11 +41,9 @@ const Header = () => {
         >
           <div className="flex items-center gap-x-4 order-1 w-[25%] box-border pl-6 lmd:pl-14 lg:pl-24 2xl:pl-16">
             <Link href="/">
-              <FaPlaneDeparture
-                size={25}
-                color={`${dark ? "#374151" : "#f3f4f6"}`}
-              />
+              <Image src="/logo-white.png" width="50" height={632} alt="logo" />
             </Link>
+
             <Link
               href="/"
               className={`hidden lg:inline  text-lg sm:text-xl lg:text-[1.375rem] font-bold tracking-wide ${

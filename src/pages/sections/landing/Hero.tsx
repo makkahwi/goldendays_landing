@@ -1,18 +1,23 @@
 import Image from "next/image";
-import { FaFacebook, FaInstagram, FaLinkedin, FaWhatsapp } from "react-icons/fa";
+import {
+  FaFacebook,
+  FaInstagram,
+  FaLinkedin,
+  FaWhatsapp,
+} from "react-icons/fa";
 
 export const links = [
-    { link: "https://www.facebook.com/goldendaystours", Icon: FaFacebook },
-    {
-      link: "https://www.instagram.com/goldendays_tourism",
-      Icon: FaInstagram,
-    },
-    {
-      link: "https://www.linkedin.com/company/golden-days-tourism-&-travel",
-      Icon: FaLinkedin,
-    },
-    { link: "https://wasap.my/962791609993", Icon: FaWhatsapp },
-  ];
+  { link: "https://www.facebook.com/goldendaystours", Icon: FaFacebook },
+  {
+    link: "https://www.instagram.com/goldendays_tourism",
+    Icon: FaInstagram,
+  },
+  {
+    link: "https://www.linkedin.com/company/golden-days-tourism-&-travel",
+    Icon: FaLinkedin,
+  },
+  { link: "https://wasap.my/962791609993", Icon: FaWhatsapp },
+];
 
 const Hero = () => {
   return (
@@ -32,9 +37,8 @@ const Hero = () => {
       </div>
 
       <div className="flex flex-col items-center px-2 xs:px-0">
-        <h1 className="text-3xl xs:text-4xl max-w-xs text-slate-100 font-bold text-center md:max-w-lg lg:text-[2.5rem] lg:leading-tight">
-          <Image src="/arrow.png" alt="scroll" width={10} height={10} />
-          
+        <h1 className="text-3xl xs:text-4xl max-w-xs text-slate-100 font-bold justify-center text-center md:max-w-lg lg:text-[2.5rem] lg:leading-tight">
+          <Image src="/logo-white.png" width="240" height={632} alt="logo" />
           Golden Days
         </h1>
       </div>
