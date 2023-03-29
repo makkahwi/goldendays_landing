@@ -1,8 +1,7 @@
 import Image from "next/image";
 import { FaFacebook, FaInstagram, FaLinkedin, FaWhatsapp } from "react-icons/fa";
 
-const Hero = () => {
-  const links = [
+export const links = [
     { link: "https://www.facebook.com/goldendaystours", Icon: FaFacebook },
     {
       link: "https://www.instagram.com/goldendays_tourism",
@@ -15,6 +14,7 @@ const Hero = () => {
     { link: "https://wasap.my/962791609993", Icon: FaWhatsapp },
   ];
 
+const Hero = () => {
   return (
     <div className="flex flex-row justify-between items-center h-[90%]">
       <div className="hidden xs:flex xs:flex-col xs:px-5 lg:px-8">
