@@ -1,40 +1,44 @@
-import React from "react";
-import { FaGithub } from "react-icons/fa";
-import { FaInstagram } from "react-icons/fa";
-import { FaTwitter } from "react-icons/fa";
 import Image from "next/image";
-import Link from "next/link";
+import { FaFacebook, FaInstagram, FaLinkedin, FaWhatsapp } from "react-icons/fa";
 
 const Hero = () => {
+  const links = [
+    { link: "https://www.facebook.com/goldendaystours", Icon: FaFacebook },
+    {
+      link: "https://www.instagram.com/goldendays_tourism",
+      Icon: FaInstagram,
+    },
+    {
+      link: "https://www.linkedin.com/company/golden-days-tourism-&-travel",
+      Icon: FaLinkedin,
+    },
+    { link: "https://wasap.my/962791609993", Icon: FaWhatsapp },
+  ];
+
   return (
     <div className="flex flex-row justify-between items-center h-[90%]">
-      {/* social */}
       <div className="hidden xs:flex xs:flex-col xs:px-5 lg:px-8">
-        <a href="https://github.com/" className="w-5 py-2">
-          <FaGithub color="#f1f5f9" size={22} />
-        </a>
-        <a href="https://www.instagram.com/" className="w-5 py-2">
-          <FaInstagram color="#f1f5f9" size={22} />
-        </a>
-        <a href="https://twitter.com/" className="w-5 py-2">
-          <FaTwitter color="#f1f5f9" size={22} />
-        </a>
+        {links.map(({ link, Icon }, i) => (
+          <a
+            key={i}
+            href={link}
+            className="w-5 py-2"
+            target="_blank"
+            rel="noreferrer"
+          >
+            <Icon color="#f1f5f9" size={22} />
+          </a>
+        ))}
       </div>
-      {/* hero */}
+
       <div className="flex flex-col items-center px-2 xs:px-0">
         <h1 className="text-3xl xs:text-4xl max-w-xs text-slate-100 font-bold text-center md:max-w-lg lg:text-[2.5rem] lg:leading-tight">
-          Get started on planning the best trip ever
+          <Image src="/arrow.png" alt="scroll" width={10} height={10} />
+          
+          Golden Days
         </h1>
-        <div className="mt-6">
-          <Link
-            href="/Start"
-            className="border text-slate-100 px-6 py-2 text-lg rounded-full backdrop-blur-sm lg:px-8 lg:py-[12px] lg:hover:px-9 lg:hover:py-[16px] md:hover:px-8 md:hover:py-[12px]  transition-all duration-300"
-          >
-            Get started
-          </Link>
-        </div>
       </div>
-      {/* scroll */}
+
       <div className="hidden xs:flex flex-col items-center px-5 group lg:px-8">
         <div className="w-[22px] h-[22px] rounded-full bg-slate-100 mb-3 group-hover:animate-bounce"></div>
         <a

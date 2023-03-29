@@ -1,13 +1,9 @@
-import Head from "next/head";
-// import { Inter } from "@next/font/google";
-import styles from "@/styles/Home.module.css";
-import Homepage from "./sections/landing/Homepage";
-import Second from "./sections/landing/Second";
-import Pic from "./sections/landing/Pic";
-import Testi from "./sections/landing/Testi";
 import Footer from "@/components/Footer";
-
-// const inter = Inter({ subsets: ["latin"] });
+import Head from "next/head";
+import Homepage from "src/pages/sections/landing/Homepage";
+import Pic from "src/pages/sections/landing/Pic";
+import Second from "src/pages/sections/landing/Second";
+import Testi from "src/pages/sections/landing/Testi";
 
 export default function Home() {
   return (
