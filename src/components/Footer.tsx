@@ -8,11 +8,9 @@ const Footer = () => {
       <footer className="w-full h-[5rem] flex flex-col gap-y-6 md:gap-y-2 bg-[#f4f4f4]">
         <div className="w-full">
           <div className="flex flex-wrap justify-between items-center min-h-[5rem] px-4 lg:px-16">
-            <div className="">
-              <Link href="" className="text-xs">
-                All Rights Reserved &#169; Golden Days Travel Agency{" "}
-                {new Date().getFullYear()}
-              </Link>
+            <div className="text-xs">
+              All Rights Reserved &#169; Golden Days Travel Agency{" "}
+              {new Date().getFullYear()}
             </div>
 
             <div className="flex flex-wrap items-center gap-x-2">
