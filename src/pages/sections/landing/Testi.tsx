@@ -1,13 +1,8 @@
-import myImage from "@/../public/21.jpg";
-import Revcard from "@/components/Revcard";
-import Link from "next/link";
-import React from "react";
-
 const Testi = () => {
   return (
     <section
-      id="review"
-      data-testid="review"
+      id="contact"
+      data-testid="contact"
       className="flex flex-col xl:container"
     >
       <div className="min-h-[8rem]" />
